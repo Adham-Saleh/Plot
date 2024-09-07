@@ -49,7 +49,7 @@ const controlCreditCardData = async function () {
 
 const controlSubmit = function (answers) {
   const correctAnswersCount = model.checkUserAnswers(answers);
-  msg = `${correctAnswersCount} / 7, mentality: ${(
+  const msg = `${correctAnswersCount} / 7, mentality: ${(
     (correctAnswersCount / 7) *
     100
   ).toFixed(2)}%`;
