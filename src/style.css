@@ -1,0 +1,324 @@
+:root {
+  --secondary-color: #cccccc;
+  --logo-color: #174d38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  padding: 20px;
+  background-color: var(--secondary-color);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 25px;
+}
+
+.content h2 {
+  font-weight: 2000;
+  color: var(--logo-color);
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.move-ballon {
+  animation: ballon 10s ease-in 1s forwards;
+}
+
+@keyframes ballon {
+  from {
+    transform: translateY(450%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.bi-balloon-heart {
+  transform: translateY(450%);
+}
+
+@keyframes open-nav-menu {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.nav-menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  padding: 20px;
+  animation: open-nav-menu 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+.timer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@keyframes rotate-spinner {
+  from {
+    transform: rotate(0);
+    opacity: 50%;
+  }
+
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px dashed var(--logo-color);
+  border-radius: 100%;
+  animation: rotate-spinner 1s ease-in-out infinite;
+}
+
+.msg-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+@keyframes rotate-card {
+  form {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.front-credit-card,
+.back-credit-card {
+  max-width: 370px;
+  min-height: 200px;
+  background-image: linear-gradient(to top right, black, rgb(71, 71, 71), gray);
+  padding: 20px;
+  border-radius: 8px;
+  transform: rotateY(180deg);
+  animation: rotate-card 0.2s ease-in-out forwards;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.card-sim {
+  width: 50px;
+  height: 35px;
+  background-color: #ffca3f;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.card-details {
+  margin: auto 22px;
+}
+
+.card-number {
+  text-align: center;
+  font-size: 16px;
+}
+
+.card-date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.card-name {
+  margin: 8px;
+}
+
+.customer-service {
+  font-size: 8px;
+  margin-bottom: 10px;
+}
+
+.ccv-info {
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.ccv-num {
+  color: black;
+}
+
+.cc input {
+  width: 250%;
+  height: 80px;
+}
+
+.back-content {
+  font-size: 10px;
+}
+
+.answer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.answer-form label {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.answer-form input {
+  height: 40px;
+  width: 250px;
+  margin: 10px;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.note {
+  text-align: center;
+}
+
+.note-title {
+  font-style: italic;
+}
+
+.startBtn,
+.restartBtn,
+.formBtns {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.start,
+.restart,
+.submitBtn{
+  padding: 12px;
+  background-color: rgb(13, 148, 13);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restart {
+  display: flex;
+  margin-left: 5px;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+  transition: all 0.2s;
+}
+
+.restart:hover {
+  background-color: red;
+  color: white;
+  transition: all 0.2s;
+}
+
+@keyframes move-card-forward {
+  0% {
+    transform: translateX(-700%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes move-card-backward {
+  0% {
+    transform: translateX(700%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.filter {
+  filter: blur(50px);
+}
+
+.amer-jr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 15px;
+  transition: filter 0.5s;
+}
+
+.amer-img,
+.amer-thanks-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amer-jr-img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 100%;
+  animation: move-card-forward 1s ease-in-out forwards;
+}
+
+.amer-jr p {
+  font-size: 12px;
+  margin: 15px;
+  font-weight: bolder;
+  max-width: 200px;
+  animation: move-card-backward 1.5s ease-in-out forwards;
+}

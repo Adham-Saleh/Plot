@@ -1,0 +1,185 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>PLOT</title>
+    <script defer src="src/js/controller.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="content">
+          <h2>PLOT</h2>
+          <button class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="#174d38"
+              class="bi bi-list-nested open-menu"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="#174d38"
+              class="bi bi-x-lg close-menu hidden"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div class="nav-menu hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          fill="red"
+          class="bi bi-balloon-heart move-ballon"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
+          />
+        </svg>
+        <h3>
+          This website is dedicated to Mr. Abdulla Amer in recognition of his
+          efforts in helping us achieve greater success in our lives.
+        </h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          fill="red"
+          class="bi bi-balloon-heart move-ballon"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
+          />
+        </svg>
+      </div>
+    </header>
+    <main>
+      <div class="timer">Time Remaining: <span class="cur-time">30</span>s</div>
+      <div class="container">
+        <div class="front-credit-card">
+          <div class="card-header">
+            <h3 class="cc card__type">Credit Card</h3>
+            <h3 class="cc bank__name">Bank Name</h3>
+          </div>
+          <div class="card-sim"></div>
+          <div class="card-details">
+            <div class="card-number">
+              <h2 class="cc cc__number">1234 5678 9123 3214</h2>
+            </div>
+            <div class="card-date">
+              <p class="cc id">0123</p>
+              <p class="cc ex__date">valid date 01/80</p>
+            </div>
+          </div>
+          <div class="cc card-name">
+            <h4 class="cc username">Adham Saleh Mohamed Saleh</h4>
+          </div>
+        </div>
+        <div class="back-credit-card hidden">
+          <div class="customer-service">
+            <p>
+              customer service:
+              <span class="cc customer__service">(+202)251895</span>
+            </p>
+          </div>
+          <div class="ccv-info">
+            <div class="cc ccv-num">
+              <p class="cc ccv">163</p>
+            </div>
+          </div>
+          <div class="cc back-content">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing.
+          </div>
+        </div>
+      </div>
+      <div class="form-container hidden">
+        <form action="" class="answer-form">
+          <div class="form__lables">
+            <label for="">card type:</label> <br />
+            <input type="text" name="card__type" /> <br />
+            <label for="">bank name:</label> <br />
+            <input type="text" name="bank__name" /> <br />
+            <label for="">username:</label> <br />
+            <input type="text" name="username" /> <br />
+            <label for="">account num:</label> <br />
+            <input type="text" name="cc__number" /> <br />
+            <label for="">valid date:</label> <br />
+            <input type="text" name="ex__date" /> <br />
+            <label for="">serial:</label> <br />
+            <input type="text" name="id" /> <br />
+            <label for="">ccv:</label> <br />
+            <input type="text" name="ccv" /> <br />
+            <label for="">customer service:</label> <br />
+            <input type="text" name="customer__service" /> <br />
+            <div class="formBtns">
+              <button class="submitBtn">Submit</button>
+              <button class="restart" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-clockwise"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+                  />
+                  <path
+                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+                  />
+                </svg>
+                Restart
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <p class="note">
+        <span class="note-title">Note:</span> click on the card to rotate
+      </p>
+      <div class="startBtn">
+        <button class="start">Start Challenge</button>
+      </div>
+      <div class="amer-jr">
+        <img src="src/amerJr.png" alt="mr. Abdualla Amer" class="amer-jr-img" />
+        <p>
+          Thank you, Mr. Abdulla Amer, for your efforts in helping us achieve
+          greater success. We wish you continued success in all your future
+          endeavors.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
